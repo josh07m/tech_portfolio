@@ -50,4 +50,24 @@ ggplot(
 
 Some ways that this graph was improved were the additions of labels on the x-axis and the y-axis. A title was also added, and more increments were added to understand the graph more clearly.
 
-For the last graph, I will be implementing all the skills I have learned in this course for graph making.
+For the last graph, I will be implementing most of the skills I have learned in this course for graphing.
+
+```{r}
+
+ggplot(
+  data = mpg,
+  mapping = aes(
+    x = cty,
+    y = hwy,
+    color = year,
+  ) 
+) + geom_point(position = "jitter", alpha = 0.4)  +
+  labs(
+    title = "MPG while in the City vs Highway",
+    subtitle = "Additional comparison of years of vehicles",
+    x = "City Fuel Economy (mpg)",
+    y = "Highway fuel Economy (mpg)",
+  ) +  scale_y_continuous(breaks = seq(0, 40, by = 5)) +
+  scale_x_continuous(breaks = seq(0, 40, by = 5)) +
+  facet_wrap(~cyl)
+```
