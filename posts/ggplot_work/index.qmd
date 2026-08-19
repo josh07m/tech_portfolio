@@ -1,11 +1,13 @@
 ---
-title: "gg_plot examples"
+title: "My First Project (Kinda)"
 author: "Joshua Matamoros"
 date: "2026-8-19"
 categories: [project, code]
 ---
 
-I took a week long course on R. We spent our time learning and coding with ggplot.
+Hello! Welcome to my first project (kinda). This blog will demonstrate some skills that I have learned after taking a week long course for R.
+
+Down below I have coded some graphs involving data about vehicles and their mileage depending on whether its being driven in city conditions or highway conditions.
 
 ```{r}
 library(ggplot2)
@@ -22,6 +24,12 @@ ggplot(
 ) + geom_point(position = "jitter", alpha = 0.6) 
 ```
 
+I have also included a data table which mirrors the information displayed on the graph.
+
+This graph involves minimal coding, only really focusing on how the mileage performs based on the year of the vehicle.
+
+There are several ways that this graph can be improved.
+
 ```{r}
 
 ggplot(
@@ -30,8 +38,16 @@ ggplot(
     x = cty,
     y = hwy,
     color = year,
-    shape = drv
   ) 
-) + geom_point(position = "jitter", alpha = 0.6) +
-  labs(title = "MPG while in the city vs highway")
+) + geom_point(position = "jitter", alpha = 0.4)  +
+  labs(
+    title = "MPG while in the city vs highway",
+    x = "city fuel economy (mpg)",
+    y = "Highway fuel economy (mpg)",
+    ) +  scale_y_continuous(breaks = seq(0, 40, by = 5)) +
+    scale_x_continuous(breaks = seq(0, 40, by = 5)) 
 ```
+
+Some ways that this graph was improved were the additions of labels on the x-axis and the y-axis. A title was also added, and more increments were added to understand the graph more clearly.
+
+For the last graph, I will be implementing all the skills I have learned in this course for graph making.
