@@ -1,0 +1,17 @@
+{
+  "hash": "4c28e7169ad125f77ff832bd5daa9d2e",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"gg_plot examples\"\nauthor: \"Joshua Matamoros\"\ndate: \"2026-8-19\"\ncategories: [project, code]\n---\n\nThis week, I took a week long course on R. We spent our time learning and coding with ggplot.\n\n\n::: {.cell}\n\n```{.r .cell-code}\nlibrary(ggplot2)\n\nmpg\n```\n\n::: {.cell-output .cell-output-stdout}\n\n```\n# A tibble: 234 × 11\n   manufacturer model      displ  year   cyl trans drv     cty   hwy fl    class\n   <chr>        <chr>      <dbl> <int> <int> <chr> <chr> <int> <int> <chr> <chr>\n 1 audi         a4           1.8  1999     4 auto… f        18    29 p     comp…\n 2 audi         a4           1.8  1999     4 manu… f        21    29 p     comp…\n 3 audi         a4           2    2008     4 manu… f        20    31 p     comp…\n 4 audi         a4           2    2008     4 auto… f        21    30 p     comp…\n 5 audi         a4           2.8  1999     6 auto… f        16    26 p     comp…\n 6 audi         a4           2.8  1999     6 manu… f        18    26 p     comp…\n 7 audi         a4           3.1  2008     6 auto… f        18    27 p     comp…\n 8 audi         a4 quattro   1.8  1999     4 manu… 4        18    26 p     comp…\n 9 audi         a4 quattro   1.8  1999     4 auto… 4        16    25 p     comp…\n10 audi         a4 quattro   2    2008     4 manu… 4        20    28 p     comp…\n# ℹ 224 more rows\n```\n\n\n:::\n\n```{.r .cell-code}\nggplot(\n  data = mpg,\n  mapping = aes(\n    x = cty,\n    y = hwy,\n    color = year\n  ) \n) + geom_point(position = \"jitter\", alpha = 0.6) + geom_smooth(method = \"lm\")\n```\n\n::: {.cell-output .cell-output-stderr}\n\n```\n`geom_smooth()` using formula = 'y ~ x'\n```\n\n\n:::\n\n::: {.cell-output .cell-output-stderr}\n\n```\nWarning: The following aesthetics were dropped during statistical transformation:\ncolour.\nℹ This can happen when ggplot fails to infer the correct grouping structure in\n  the data.\nℹ Did you forget to specify a `group` aesthetic or to convert a numerical\n  variable into a factor?\n```\n\n\n:::\n\n::: {.cell-output-display}\n![](index_files/figure-html/unnamed-chunk-1-1.png){width=672}\n:::\n:::\n\n",
+    "supporting": [
+      "index_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

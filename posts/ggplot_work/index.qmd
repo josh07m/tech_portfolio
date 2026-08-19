@@ -1,0 +1,43 @@
+---
+title: "gg_plot examples"
+author: "Joshua Matamoros"
+date: "2026-8-19"
+categories: [project, code]
+---
+
+This week, I took a week long course on R. We spent our time learning and coding with ggplot.
+
+```{r}
+library(ggplot2)
+
+mpg
+
+ggplot(
+  data = mpg,
+  mapping = aes(
+    x = cty,
+    y = hwy,
+    color = year,
+    shape = drv
+  ) 
+) + geom_point(position = "jitter", alpha = 0.6) 
+```
+
+test test test
+
+```{r}
+library(ggplot2)
+
+mpg
+
+ggplot(
+  data = mpg,
+  mapping = aes(
+    x = cty,
+    y = hwy,
+    color = year,
+    shape = drv
+  ) 
+) + geom_point(position = "jitter", alpha = 0.6) +
+  labs(title = "MPG while in the city vs highway")
+```

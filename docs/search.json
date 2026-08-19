@@ -4,21 +4,28 @@
     "href": "index.html",
     "title": "Joshua Matamoros",
     "section": "",
-    "text": "My First Project\n\n\n\nproject\n\ngeneral\n\n\n\n\n\n\n\n\n\nAug 20, 2026\n\n\nJoshua Matamoros\n\n\n\n\n\n\n\n\n\n\n\n\nWhat is the purpose of this blog?\n\n\n\ngoals\n\ngeneral\n\n\n\n\n\n\n\n\n\nAug 19, 2026\n\n\nJoshua Matamoros\n\n\n\n\n\nNo matching items"
+    "text": "My First Project\n\n\n\nproject\n\ngeneral\n\n\n\n\n\n\n\n\n\nAug 20, 2026\n\n\nJoshua Matamoros\n\n\n\n\n\n\n\n\n\n\n\n\nWhat is the purpose of this blog?\n\n\n\ngoals\n\ngeneral\n\n\n\n\n\n\n\n\n\nAug 19, 2026\n\n\nJoshua Matamoros\n\n\n\n\n\n\n\n\n\n\n\n\ngg_plot examples\n\n\n\nproject\n\ncode\n\n\n\n\n\n\n\n\n\nAug 19, 2026\n\n\nJoshua Matamoros\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "posts/my_first_post/index.html",
-    "href": "posts/my_first_post/index.html",
-    "title": "My First Project",
+    "objectID": "posts/ggplot_work/index.html",
+    "href": "posts/ggplot_work/index.html",
+    "title": "gg_plot examples",
     "section": "",
-    "text": "This is an example first post. Whatever you write here will appear inside your post.\nIt is possible to write lists:\nAnd make headers"
+    "text": "This week, I took a week long course on R. We spent our time learning and coding with ggplot.\n\nlibrary(ggplot2)\n\nmpg\n\n# A tibble: 234 × 11\n   manufacturer model      displ  year   cyl trans drv     cty   hwy fl    class\n   &lt;chr&gt;        &lt;chr&gt;      &lt;dbl&gt; &lt;int&gt; &lt;int&gt; &lt;chr&gt; &lt;chr&gt; &lt;int&gt; &lt;int&gt; &lt;chr&gt; &lt;chr&gt;\n 1 audi         a4           1.8  1999     4 auto… f        18    29 p     comp…\n 2 audi         a4           1.8  1999     4 manu… f        21    29 p     comp…\n 3 audi         a4           2    2008     4 manu… f        20    31 p     comp…\n 4 audi         a4           2    2008     4 auto… f        21    30 p     comp…\n 5 audi         a4           2.8  1999     6 auto… f        16    26 p     comp…\n 6 audi         a4           2.8  1999     6 manu… f        18    26 p     comp…\n 7 audi         a4           3.1  2008     6 auto… f        18    27 p     comp…\n 8 audi         a4 quattro   1.8  1999     4 manu… 4        18    26 p     comp…\n 9 audi         a4 quattro   1.8  1999     4 auto… 4        16    25 p     comp…\n10 audi         a4 quattro   2    2008     4 manu… 4        20    28 p     comp…\n# ℹ 224 more rows\n\nggplot(\n  data = mpg,\n  mapping = aes(\n    x = cty,\n    y = hwy,\n    color = year\n  ) \n) + geom_point(position = \"jitter\", alpha = 0.6) + geom_smooth(method = \"lm\")\n\n`geom_smooth()` using formula = 'y ~ x'\n\n\nWarning: The following aesthetics were dropped during statistical transformation:\ncolour.\nℹ This can happen when ggplot fails to infer the correct grouping structure in\n  the data.\nℹ Did you forget to specify a `group` aesthetic or to convert a numerical\n  variable into a factor?"
   },
   {
-    "objectID": "posts/my_first_post/index.html#this-is-a-second-level-heading",
-    "href": "posts/my_first_post/index.html#this-is-a-second-level-heading",
-    "title": "My First Project",
-    "section": "This is a second level heading",
-    "text": "This is a second level heading\nYou can include images, and many other kinds of content.\nIf you are using the visual editor in Rstudio you can drag images onto the editor to insert them into the document. Otherwise, you need to place the image inside of the folder for this post, and then you can insert it to your post directly, like this:\n\nThe first image in a blog post will also be used on the listings page. ……"
+    "objectID": "posts/Example_assignment/index.html",
+    "href": "posts/Example_assignment/index.html",
+    "title": "What is the purpose of this blog?",
+    "section": "",
+    "text": "What I aim to accomplish with this blog is to share any tech projects that I am working on currently, or will work on in the future. By posting these projects, I aim to share any knowledge or experiences that may be beneficial to anyone who may stumble their way onto my website.\nAlong with sharing any experiences, I hope to contsruct this blog to ultimately help showcase my projects to employers as I am studying towards a degree in Aerospace Engineering."
+  },
+  {
+    "objectID": "posts/Example_assignment/index.html#about-me",
+    "href": "posts/Example_assignment/index.html#about-me",
+    "title": "What is the purpose of this blog?",
+    "section": "About Me",
+    "text": "About Me"
   },
   {
     "objectID": "readme.html",
@@ -105,18 +112,18 @@
     "text": "See this growing list of quarto resources for much, much more:\nhttps://github.com/mcanouil/awesome-quarto"
   },
   {
-    "objectID": "posts/Example_assignment/index.html",
-    "href": "posts/Example_assignment/index.html",
-    "title": "What is the purpose of this blog?",
+    "objectID": "posts/my_first_post/index.html",
+    "href": "posts/my_first_post/index.html",
+    "title": "My First Project",
     "section": "",
-    "text": "What I aim to accomplish with this blog is to share any tech projects that I am working on currently, or will work on in the future. By posting these projects, I aim to share any knowledge or experiences that may be beneficial to anyone who may stumble their way onto my website.\nAlong with sharing any experiences, I hope to contsruct this blog to ultimately help showcase my projects to employers as I am studying towards a degree in Aerospace Engineering."
+    "text": "This is an example first post. Whatever you write here will appear inside your post.\nIt is possible to write lists:\nAnd make headers"
   },
   {
-    "objectID": "posts/Example_assignment/index.html#about-me",
-    "href": "posts/Example_assignment/index.html#about-me",
-    "title": "What is the purpose of this blog?",
-    "section": "About Me",
-    "text": "About Me"
+    "objectID": "posts/my_first_post/index.html#this-is-a-second-level-heading",
+    "href": "posts/my_first_post/index.html#this-is-a-second-level-heading",
+    "title": "My First Project",
+    "section": "This is a second level heading",
+    "text": "This is a second level heading\nYou can include images, and many other kinds of content.\nIf you are using the visual editor in Rstudio you can drag images onto the editor to insert them into the document. Otherwise, you need to place the image inside of the folder for this post, and then you can insert it to your post directly, like this:\n\nThe first image in a blog post will also be used on the listings page. ……"
   },
   {
     "objectID": "about.html",
