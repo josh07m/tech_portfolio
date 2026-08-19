@@ -1,5 +1,5 @@
 ---
-title: "quartoCourseBlog"
+title: "Joshua Matamoros"
 listing:
   contents: posts
   sort: "date desc"
