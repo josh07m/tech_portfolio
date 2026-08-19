@@ -17,6 +17,6 @@ about:
 
 I am currently a second year student at Dominican University.
 
-This website will be used to display any current and future tech projects.
+This blog will be used to display any current and future tech projects.
 
 Try changing the template type from `jolla` to one of the other options for a different look and feel.
