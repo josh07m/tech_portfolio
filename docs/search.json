@@ -2,37 +2,23 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "quartoCourseBlog test",
+    "title": "quartoCourseBlog",
     "section": "",
-    "text": "test test\n\nThis is my first blog showcasing my current and future tech projects\n\ntest test test\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nExample assignment\n\n\n\ngoals\n\ngeneral\n\n\n\n\n\n\n\n\n\nOct 21, 2022\n\n\nMatt Crump\n\n\n\n\n\n\n\n\n\n\n\n\nMy First post\n\n\n\ngoals\n\ngeneral\n\n\n\n\n\n\n\n\n\nOct 21, 2022\n\n\nMatt Crump\n\n\n\n\n\nNo matching items"
+    "text": "My First Project\n\n\n\ngoals\n\ngeneral\n\n\n\n\n\n\n\n\n\nAug 20, 2026\n\n\nJoshua Matamoros\n\n\n\n\n\n\n\n\n\n\n\n\nWhat is the purpose of this blog?\n\n\n\ngoals\n\ngeneral\n\n\n\n\n\n\n\n\n\nAug 19, 2026\n\n\nJoshua Matamoros\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/my_first_post/index.html",
     "href": "posts/my_first_post/index.html",
-    "title": "My First post",
+    "title": "My First Project",
     "section": "",
     "text": "This is an example first post. Whatever you write here will appear inside your post.\nIt is possible to write lists:\nAnd make headers"
   },
   {
     "objectID": "posts/my_first_post/index.html#this-is-a-second-level-heading",
     "href": "posts/my_first_post/index.html#this-is-a-second-level-heading",
-    "title": "My First post",
+    "title": "My First Project",
     "section": "This is a second level heading",
     "text": "This is a second level heading\nYou can include images, and many other kinds of content.\nIf you are using the visual editor in Rstudio you can drag images onto the editor to insert them into the document. Otherwise, you need to place the image inside of the folder for this post, and then you can insert it to your post directly, like this:\n\nThe first image in a blog post will also be used on the listings page."
-  },
-  {
-    "objectID": "posts/Example_assignment/index.html",
-    "href": "posts/Example_assignment/index.html",
-    "title": "Example assignment",
-    "section": "",
-    "text": "This assignment engages you in the process of introspection. Your task is to use introspection to evaluate and describe your own mental imagery abilities. Attempt to answer the following kinds of questions. What is your mental imagery like? Do you have mental imagery for different kinds of senses? Is your mental imagery vivid and life-like or very different from normal perception? How would you describe your mental imagery?\nYou should write a minimum of 250 words, but feel free to write more. Submit your document on blackboard by the due date."
-  },
-  {
-    "objectID": "posts/Example_assignment/index.html#my-mental-imagery",
-    "href": "posts/Example_assignment/index.html#my-mental-imagery",
-    "title": "Example assignment",
-    "section": "My mental imagery",
-    "text": "My mental imagery\nsunshine and rainbows"
   },
   {
     "objectID": "readme.html",
@@ -119,17 +105,17 @@
     "text": "See this growing list of quarto resources for much, much more:\nhttps://github.com/mcanouil/awesome-quarto"
   },
   {
-    "objectID": "posts/New_Blog_Post/Index.html",
-    "href": "posts/New_Blog_Post/Index.html",
-    "title": "quartoCourseBlog",
+    "objectID": "posts/Example_assignment/index.html",
+    "href": "posts/Example_assignment/index.html",
+    "title": "What is the purpose of this blog?",
     "section": "",
-    "text": "testing testing testing\n1 2 3 4 5"
+    "text": "What I aim to accomplish with this blog is to share any tech projects that I am working on currently, or will work on in the future. By posting these projects, I aim to share any knowledge or experiences that may be beneficial to anyone who may stumble their way onto my website.\nAlong with sharing any experiences, I hope to contsruct this blog to ultimately help showcase my projects to employers as I am studying towards a degree in Aerospace Engineering."
   },
   {
     "objectID": "about.html",
     "href": "about.html",
-    "title": "About",
+    "title": "About Me",
     "section": "",
-    "text": "I am currently a second year student at Dominican University.\nThis blog will be used to display any current and future tech projects.\nTry changing the template type from jolla to one of the other options for a different look and feel."
+    "text": "I am currently a second year student at Dominican University.\nThis blog will be used to display any current and future tech projects.\nThank you for checking out my blog"
   }
 ]

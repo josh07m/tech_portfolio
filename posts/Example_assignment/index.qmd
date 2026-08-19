@@ -1,16 +1,14 @@
 ---
-title: "Example assignment"
-author: "Matt Crump"
-date: "2022-10-21"
+title: "What is the purpose of this blog?"
+author: "Joshua Matamoros"
+date: "2026-8-19"
 categories: [goals,general]
 ---
 
-### Introspect on your own mental imagery
+### What I aim to accomplish
 
-This assignment engages you in the process of introspection. Your task is to use introspection to evaluate and describe your own mental imagery abilities. Attempt to answer the following kinds of questions. What is your mental imagery like? Do you have mental imagery for different kinds of senses? Is your mental imagery vivid and life-like or very different from normal perception? How would you describe your mental imagery?
+What I aim to accomplish with this blog is to share any tech projects that I am working on currently, or will work on in the future. By posting these projects, I aim to share any knowledge or experiences that may be beneficial to anyone who may stumble their way onto my website.
 
-You should write a **minimum of 250 words**, but feel free to write more. Submit your document on blackboard by the due date.
+Along with sharing any experiences, I hope to contsruct this blog to ultimately help showcase my projects to employers as I am studying towards a degree in Aerospace Engineering.
 
-## My mental imagery
-
-sunshine and rainbows
+## 

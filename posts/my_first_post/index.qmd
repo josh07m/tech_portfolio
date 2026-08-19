@@ -1,7 +1,7 @@
 ---
-title: "My First post"
-author: "Matt Crump"
-date: "2022-10-21"
+title: "My First Project"
+author: "Joshua Matamoros"
+date: "2026-8-20"
 categories: [goals,general]
 ---
 
