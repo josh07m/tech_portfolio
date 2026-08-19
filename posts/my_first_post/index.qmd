@@ -2,7 +2,7 @@
 title: "My First Project"
 author: "Joshua Matamoros"
 date: "2026-8-20"
-categories: [goals,general]
+categories: [project,general]
 ---
 
 This is an example first post. Whatever you write here will appear inside your post.
