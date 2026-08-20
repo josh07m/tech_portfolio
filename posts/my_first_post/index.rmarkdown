@@ -5,6 +5,13 @@ date: "2026-8-20"
 categories: [project,general]
 ---
 
+```{r}
+#| include: false
+
+
+
+```
+
 A rapidly growing problem has been Earths environmental change. More specifically, the tremendous change in the Arctic for the past decades. To understand the rate and severity at which the Arctic is losing its sea ice, a 16 year long project was conducted, recording data every 30 minutes from 2006-2022.
 
 What data does this study record exactly, though?
@@ -19,27 +26,52 @@ These two variables were recorded for 4 different sites. Two of these sites were
 library(tidyverse)
 water_temp_shallow <- read.csv("/cloud/project/posts/my_first_post/mergedFiles_Isfjorden.csv")
 
+
 shallow_temps <- water_temp_shallow |> filter(Strata == "shallow")
 
 daily_shallow_temps <- shallow_temps |>
   group_by(Date) |>
   summarise(mean_temp = mean(Temperature_C, na.rm = TRUE))
 
-daily_shallow_temps<- daily_shallow_temps |>
-  mutate(
-    year = year(dmy(Date)),
-    month = month(dmy(Date)),
-    day = day(dmy(Date)),
-    day_of_year = yday(dmy(Date))
-  )
+
 
 ggplot(
   data = daily_shallow_temps,
-  mapping = aes(y = mean_temp, x = day_of_year, group = year, color = year)
-) + geom_point(alpha = 0.25) + geom_smooth(aes(colour = after_scale(alpha(colour, 0.3))), se = FALSE) 
+  mapping = aes(y = mean_temp, x = Date)
+) + geom_point() + geom_smooth()
+```
+
+- Pull out year from the date
+
+- Group the plot by year so we can see each year on top of each other
+
+- Also calculate min and max temps and make their own plots
+
+```{r}
+
+library(tidyverse)
+
+water_temp_deep <- read.csv("/cloud/project/posts/my_first_post/mergedFiles_Isfjorden.csv")
+
+deep_temps <- water_temp_deep |> filter(Strata == "deep")
+
+daily_deep_temps <- deep_temps |>
+  group_by(Date) |>
+  summarise(mean_temp = mean(Temperature_C, na.rm = TRUE))
+
+ggplot(
+  data = daily_deep_temps,
+  mapping = aes(y = mean_temp, x = Date)
+) + geom_point() + geom_smooth()
 
 ```
 
-- Improve the color scale - and maybe make a bit of transparency for the smoothed line a well
 
-- Also calculate min and max temps and make their own plots
+
+
+
+
+
+
+
+
