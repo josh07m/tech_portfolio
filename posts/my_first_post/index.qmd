@@ -5,22 +5,13 @@ date: "2026-8-20"
 categories: [project,general]
 ---
 
-This is an example first post. Whatever you write here will appear inside your post.
+```         
+```
 
-It is possible to write lists:
+A rapidly growing problem has been Earths environmental change. More specifically, the tremendous change in the Arctic for the past decades. To understand the rate and severity at which the Arctic is losing its sea ice, a 16 year long project was conducted, recording data every 30 minutes from 2006-2022.
 
-1.  One
-2.  Two
-3.  Three
+What data does this study record exactly, though?
 
-And make headers
+The melting of the ice is becoming exponentially quicker. Within the study, the amount of sunlight which was captured a certain distance beneath the surface of water was recorded. It is likely for one to hypothesize throughout the 16 years, the amount of sunlight which was recorded obviously increased due to the reduction of ice in each passing year.
 
-## This is a second level heading
-
-You can include images, and many other kinds of content.
-
-If you are using the visual editor in Rstudio you can drag images onto the editor to insert them into the document. Otherwise, you need to place the image inside of the folder for this post, and then you can insert it to your post directly, like this:
-
-![](thumbnail.jpg)
-
-The first image in a blog post will also be used on the listings page. ......
+Along with the amount of sunlight being recorded, the temperature of the water was as well being recorded. Like the sunlight, it seems reasonable to assume that the temperature was to increase. Even if the difference seems minimal, the data set is only being taken from a 16 year sample, which is small relative to how long global warming has been affecting Earth.
