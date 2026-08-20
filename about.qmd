@@ -6,7 +6,7 @@ about:
   links:
     - icon: instagram
       text: Instagram
-      href: instagram.com/josh07m
+      href: https://instagram.com/josh07m
     - icon: linkedin
       text: LinkedIn
       href: https://www.linkedin.com/in/joshua-matamoros

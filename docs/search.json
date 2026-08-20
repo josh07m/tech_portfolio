@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Joshua Matamoros",
     "section": "",
-    "text": "My First Project\n\n\n\nproject\n\ngeneral\n\n\n\n\n\n\n\n\n\nAug 20, 2026\n\n\nJoshua Matamoros\n\n\n\n\n\n\n\n\n\n\n\n\nWhat is the purpose of this blog?\n\n\n\ngoals\n\ngeneral\n\n\n\n\n\n\n\n\n\nAug 19, 2026\n\n\nJoshua Matamoros\n\n\n\n\n\n\n\n\n\n\n\n\nMy First Project (Kinda)\n\n\n\nproject\n\ncode\n\n\n\n\n\n\n\n\n\nAug 19, 2026\n\n\nJoshua Matamoros\n\n\n\n\n\nNo matching items"
+    "text": "My First Project\n\n\n\nproject\n\ngeneral\n\n\n\n\n\n\n\n\n\nAug 20, 2026\n\n\nJoshua Matamoros\n\n\n\n\n\n\n\n\n\n\n\n\nMy First Project (Kinda)\n\n\n\nproject\n\ncode\n\n\n\n\n\n\n\n\n\nAug 20, 2026\n\n\nJoshua Matamoros\n\n\n\n\n\n\n\n\n\n\n\n\nWhat is the purpose of this blog?\n\n\n\ngoals\n\ngeneral\n\n\n\n\n\n\n\n\n\nAug 19, 2026\n\n\nJoshua Matamoros\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/ggplot_work/index.html",
@@ -18,7 +18,7 @@
     "href": "posts/Example_assignment/index.html",
     "title": "What is the purpose of this blog?",
     "section": "",
-    "text": "What I aim to accomplish with this blog is to share any tech projects that I am working on currently, or will work on in the future. By posting these projects, I aim to share any knowledge or experiences that may be beneficial to anyone who may stumble their way onto my website.\nAlong with sharing any experiences, I hope to contsruct this blog to ultimately help showcase my projects to employers as I am studying towards a degree in Aerospace Engineering."
+    "text": "What I aim to accomplish with this blog is to share any tech projects that I am working on currently, or will work on in the future. By posting these projects, I aim to share any knowledge or experiences that may be beneficial to anyone who may stumble their way onto my website.\nAlong with sharing any experiences, I hope to construct this blog to ultimately help showcase my projects to employers as I am studying towards a degree in Aerospace Engineering."
   },
   {
     "objectID": "posts/Example_assignment/index.html#about-me",
@@ -116,14 +116,7 @@
     "href": "posts/my_first_post/index.html",
     "title": "My First Project",
     "section": "",
-    "text": "This is an example first post. Whatever you write here will appear inside your post.\nIt is possible to write lists:\nAnd make headers"
-  },
-  {
-    "objectID": "posts/my_first_post/index.html#this-is-a-second-level-heading",
-    "href": "posts/my_first_post/index.html#this-is-a-second-level-heading",
-    "title": "My First Project",
-    "section": "This is a second level heading",
-    "text": "This is a second level heading\nYou can include images, and many other kinds of content.\nIf you are using the visual editor in Rstudio you can drag images onto the editor to insert them into the document. Otherwise, you need to place the image inside of the folder for this post, and then you can insert it to your post directly, like this:\n\nThe first image in a blog post will also be used on the listings page. ……"
+    "text": "A rapidly growing problem has been Earths environmental change. More specifically, the tremendous change in the Arctic for the past decades. To understand the rate and severity at which the Arctic is losing its sea ice, a 16 year long project was conducted, recording data every 30 minutes from 2006-2022.\nWhat data does this study record exactly, though?\nThe melting of the ice is becoming exponentially quicker. Within the study, the amount of sunlight which was captured a certain distance beneath the surface of water was recorded. It is likely for one to hypothesize throughout the 16 years, the amount of sunlight which was recorded obviously increased due to the reduction of ice in each passing year.\nAlong with the amount of sunlight being recorded, the temperature of the water was as well being recorded. Like the sunlight, it seems reasonable to assume that the temperature was to increase. Even if the difference seems minimal, the data set is only being taken from a 16 year sample, which is small relative to how long global warming has been affecting Earth."
   },
   {
     "objectID": "about.html",
