@@ -27,17 +27,22 @@ water_temp_shallow <- NULL
 daily_shallow_temps <- shallow_temps |>
   group_by(Date) |>
   summarise(
-    mean_temp = mean(Temperature_C, na.rm = TRUE)
+    mean_temp = mean(Temperature_C, na.rm = TRUE),
     # Max and min can happen here
-  )
+    min_temp = min(mean_temp),
+    max_temp = max(mean_temp)
+  ) 
+
 shallow_temps  <- NULL
 
 
 daily_deep_temps <- deep_temps |>
   group_by(Date) |>
   summarise(
-    mean_temp = mean(Temperature_C, na.rm = TRUE)
+    mean_temp = mean(Temperature_C, na.rm = TRUE),
     # min and max will go here eventually
+    min(deep_temps$mean_temp),
+    max(deep_temps$mean_temp)
   )
 deep_temps <- NULL
 
@@ -60,8 +65,50 @@ daily_shallow_temps<- daily_shallow_temps |>
 
 ggplot(
   data = daily_shallow_temps,
-  mapping = aes(y = mean_temp, x = day_of_year, group = year, color = year)
-) + geom_point(alpha = 0.25) + geom_smooth(aes(colour = after_scale(alpha(colour, 0.3))), se = FALSE) +
+  mapping = aes(
+    y = mean_temp, 
+    x = day_of_year, 
+    group = year, 
+    color = year
+    )
+  ) + 
+    geom_point(alpha = 0.25) + 
+    geom_smooth(se = FALSE) + 
+  labs(
+    x = "Day of the Year",
+    y = "Average Temperature",
+    title = "Average Temperature Per Day For Every Year",
+    caption = "data from ..."
+   ) + scale_colour_continuous(low = "#FFBEB2", high = "#AE123A") +
+  theme_classic()
+
+```
+
+```{r}
+#Minimum Graph
+
+ggplot(data = daily_shallow_temps,
+       mapping = aes(
+         x = day_of_year,
+         y = min_temp)
+       ) + geom_smooth()+
+    labs(
+       x = "Day of the Year",
+       y = "Average Temperature",
+       title = "Average Temperature Per Day For Every Year",
+      caption = "data from ..."
+    )
+
+```
+
+```{r}
+#Max Graph
+
+ggplot(data = daily_shallow_temps,
+       mapping = aes(
+         x = day_of_year,
+         y = max_temp)
+) + geom_smooth()+
   labs(
     x = "Day of the Year",
     y = "Average Temperature",
@@ -73,39 +120,25 @@ ggplot(
 ```
 
 ```{r}
-#Maximum Graph
-  
-ggplot(
-  data = daily_shallow_temps,
-  mapping = aes(y = mean_temp, x = day_of_year, group = year, color = year))  +
-   geom_point()+
-  geom_smooth() + 
-   labs(title = "Maximum",
-       x = "X Values",
-       y = "Y Values") 
-```
-
-```{r}
-#Minimum Graph
 
 ggplot(
-  data = daily_shallow_temps,
-  mapping = aes(y = mean_temp, x = day_of_year, group = year, color = year))  +
-  geom_point()+
-  geom_smooth() + 
-  labs(title = "Minimum",
-       x = "X Values",
-       y = "Y Values") 
-```
-
-```{r}
-
-
-
-
-
-
-
+  data = daily_deep_temps,
+  mapping = aes(
+    y = mean_temp, 
+    x = day_of_year, 
+    group = year, 
+    color = year
+  )
+) + 
+  geom_point(alpha = 0.25) + 
+  geom_smooth(se = FALSE) + 
+  labs(
+    x = "Day of the Year",
+    y = "Average Temperature",
+    title = "Average Temperature Per Day For Every Year",
+    caption = "data from ..."
+  ) + scale_colour_continuous(low = "#FFBEB2", high = "#AE123A") +
+  theme_classic()
 ```
 
 - 
