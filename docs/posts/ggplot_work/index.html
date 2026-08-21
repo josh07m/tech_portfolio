@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Joshua Matamoros">
+<meta name="dcterms.date" content="2026-08-20">
 
-<title>readme – quartoCourseBlog</title>
+<title>My First Project (Kinda) – quartoCourseBlog</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,27 +22,62 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-82bd6119df2bf4ab524fef438a105040.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-82bd6119df2bf4ab524fef438a105040.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -70,17 +107,17 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
 <body class="nav-fixed fullcontent quarto-light">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">quartoCourseBlog</span>
     </a>
   </div>
@@ -91,7 +128,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../../about.html"> 
 <span class="menu-text">Other Socials</span></a>
   </li>  
   <li class="nav-item compact">
@@ -112,157 +149,142 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">My First Project (Kinda)</h1>
+                                <div class="quarto-categories">
+                <div class="quarto-category">project</div>
+                <div class="quarto-category">code</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Joshua Matamoros </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">August 20, 2026</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
 
-<section id="using-this-quarto-course-blog-template" class="level1">
-<h1>Using this quarto course blog template</h1>
-<p>This is a template for using <a href="https://quarto.org">quarto</a> to create a course blog. A course blog can be used in many ways to engage with course content. For example, you could use the blog to post assignments, or to dive more deeply into course material that interests you. By the end of the course, your blog can serve as a portfolio of ways that you engaged in the material. By learning how to use quarto for your blog, you will also be learning new skills for creating and sharing reproducible documents that could be useful to you in the future.</p>
-<p>The purpose of this page is to provide tips and pointers about blogging with quarto. Quarto is simple enough for creating a basic course blog. However, it is also very deep and can be used to create all sorts of documents, from website, to slide decks, and books.</p>
-<section id="quarto-documentation" class="level2">
-<h2 class="anchored" data-anchor-id="quarto-documentation">Quarto documentation</h2>
-<p>Many questions about quarto can be answered from the quarto documentation located at: <a href="https://quarto.org" class="uri">https://quarto.org</a>.</p>
-<p>If you are looking for something specific and don’t know where to find it on the website, use the search tool in the top right corner.</p>
-<p><img src="images/Screen Shot 2022-10-24 at 10.23.46 AM.png" class="img-fluid"></p>
-</section>
-<section id="using-this-template" class="level2">
-<h2 class="anchored" data-anchor-id="using-this-template">Using this template</h2>
-<p>To use this template you will need a Github.com account, and access to R and Rstudio.</p>
-<p>You can get access by creating a Github.com account, and downloading the necessary open-source software to your machine.</p>
-<p>It is also possible to use Rstudio in your web-browser, which does not require downloading any software. There are two sets of instructions, one for the downloading approach, and the other for using Rstudio cloud. Scroll to the bottom for instructions on using Rstudio cloud.</p>
-</section>
-<section id="downloading-the-free-software" class="level2">
-<h2 class="anchored" data-anchor-id="downloading-the-free-software">Downloading the free software</h2>
-<p>In order to use this template you will need to install some free open-source software on your computer.</p>
-<ol type="1">
-<li>Sign up for a free account at <a href="https://github.com" class="uri">https://github.com</a>. This a website for sharing open-source software, but it can also be used to serve your blog as a website for free.</li>
-<li><a href="https://desktop.github.com">Download Github Desktop</a> and install it on your machine. This should install the version control software git on your system, and you can use Github Desktop to easily push your blog from your local computer so that it can be viewed on Github.com.</li>
-<li><a href="https://cran.rstudio.com">Download R</a> and install it on your machine. R is a programming language capable of many things, and it needs to be on your machine before you can run R Studio.</li>
-<li><a href="https://www.rstudio.com/products/rstudio/download/#download">Download R Studio Desktop</a> and install it on your machine. R Studio is called an “IDE” or integrated development environment, that you can use to write your blog with quarto.</li>
-</ol>
-</section>
-<section id="make-a-quarto-blog-project" class="level2">
-<h2 class="anchored" data-anchor-id="make-a-quarto-blog-project">Make a quarto blog project</h2>
-<p>Once you have the software installed, the next step is to create a quarto blog project in R studio. The collection of files in this template is a pre-made quarto blog project that you can modify for your own purposes. You can also make one yourself in Rstudio.</p>
-<p>Assuming you have downloaded this template, and you have installed the above software, then you need to open <code>quartoCourseBlog.Rproj</code>.</p>
-<p><img src="images/Screen Shot 2022-10-24 at 10.33.12 AM.png" class="img-fluid"></p>
-</section>
-<section id="render-the-blog" class="level2">
-<h2 class="anchored" data-anchor-id="render-the-blog">Render the blog</h2>
-<p>To find out if everything is working, try rendering the blog. Go to the “Build” Tab and press “Render Website”.</p>
-<p><img src="images/Screen Shot 2022-10-24 at 10.49.05 AM.png" class="img-fluid"></p>
-<p>After the rendering is complete, you should be able to view your blog. It might show up in the viewer pane like this:</p>
-<p><img src="images/Screen Shot 2022-10-24 at 10.50.33 AM.png" class="img-fluid"></p>
-<p>And if you press the ‘window-with-an-arrow’ button, you can view the website in your default browser. Quarto websites automatically adjust for the size of the window, so it may appear differently in the viewer pane versus the browser.</p>
-</section>
-<section id="make-a-new-blog-post" class="level2">
-<h2 class="anchored" data-anchor-id="make-a-new-blog-post">Make a new blog post</h2>
-<p>All of the blog posts are located in the <code>posts</code> folder.</p>
-<p><img src="images/Screen Shot 2022-10-24 at 11.17.30 AM.png" class="img-fluid"></p>
-<p>To make a new post, copy an existing post and then modify it. For example, my <code>posts</code> folder currently contains one post, and it is inside the <code>my_first_post</code> folder.</p>
-<p><img src="images/Screen Shot 2022-10-24 at 11.19.22 AM.png" class="img-fluid"></p>
-<p>I can copy the folder and make a new one with the same contents from the Rstudio gear-box menu:</p>
-<p><img src="images/Screen Shot 2022-10-24 at 11.20.10 AM.png" class="img-fluid"></p>
-<p>I made a folder for a second post called <code>Example_assignment</code>.</p>
-<p><img src="images/Screen Shot 2022-10-24 at 11.22.43 AM.png" class="img-fluid"></p>
-<p>These are the two files inside the folder. The <code>.qmd</code> file is a plain text file where you will write the blog post. This folder can also be used to store other assets you might put in the post, such as pictures.</p>
-<p><img src="images/Screen Shot 2022-10-24 at 11.23.02 AM.png" class="img-fluid"></p>
-<section id="writing-a-post" class="level3">
-<h3 class="anchored" data-anchor-id="writing-a-post">Writing a post</h3>
-<p>To write a new post, open the .qmd file, edit the text, and then re-render the website. This is what the text in the .qmd file looked like when I copied it.</p>
-<p><img src="images/Screen Shot 2022-10-24 at 11.29.18 AM.png" class="img-fluid"></p>
-<p>The text at the top between the “—” is called YAML, and provides meta-data for your document. This is where you can change the title, date, name, and add keywords if you want.</p>
-<p>The rest of the document is for the main body of the post. For example, I changed the text to read:</p>
-<p><img src="images/Screen Shot 2022-10-24 at 11.39.27 AM.png" class="img-fluid"></p>
-</section>
-</section>
-<section id="re-render-to-see-your-changes" class="level2">
-<h2 class="anchored" data-anchor-id="re-render-to-see-your-changes">Re-render to see your changes</h2>
-<p>Render the website from the build tab again to see your new post.</p>
-</section>
-<section id="share-your-blog-on-github.com" class="level2">
-<h2 class="anchored" data-anchor-id="share-your-blog-on-github.com">Share your blog on github.com</h2>
-<p>To share your blog online you will have to publish it on a server that can be accessed by other people on the internet. There are multiple ways to do this step, and I recommend using Github pages. You can view more in-depth instructions from quarto here <a href="https://quarto.org/docs/publishing/github-pages.html" class="uri">https://quarto.org/docs/publishing/github-pages.html</a>.</p>
-<p>Here are the steps:</p>
-<ol type="1">
-<li>Open Github Desktop</li>
-<li>Go to preferences and sign in to your Github.com account</li>
-<li>“Add” your blog project folder to Github Desktop</li>
-<li>There should be an option for a commit message, write a note in there like “first commit”.</li>
-<li>Publish to github.com and <strong>uncheck private repository</strong> so that other people will be able to see your repository.</li>
-<li>You should now be able to see your new repository in your github.com profile, which means you should be able to see a copy of your blog files in the repository.</li>
-<li>Activate Github pages for your repository (under repository settings), and serve the page from the “docs” folder.</li>
-<li>Access the blog from the url generated by the github pages settings page.</li>
-</ol>
-</section>
-<section id="pushing-new-posts-to-github.com" class="level2">
-<h2 class="anchored" data-anchor-id="pushing-new-posts-to-github.com">Pushing new posts to github.com</h2>
-<p>Whenever you make changes to your blog project that you want to share online follow these steps:</p>
-<ol type="1">
-<li>Make changes to your blog, like writing a new post, or editing an old one.</li>
-<li>Render the website in R-studio. What you see here should be what you will see later on Github.com</li>
-<li>Open Github Desktop and <strong>Commit your changes</strong>, by writing brief commit title, and pressing commit.</li>
-<li>Then, use Github Desktop to <strong>Push your changes</strong> to github.com.</li>
-<li>Wait half a minute or so, and you should see your new content appear on the website.</li>
-</ol>
-</section>
-<section id="posit-cloud-formerly-rstudio-cloud" class="level2">
-<h2 class="anchored" data-anchor-id="posit-cloud-formerly-rstudio-cloud">Posit cloud (formerly Rstudio cloud)</h2>
-<p>I am planning to add a video overview of these steps soon. In the meantime, these instructions may be enough to get started with R studio cloud and github.com.</p>
-<ol type="1">
-<li>Sign up for a free account with posit cloud here <a href="https://posit.cloud/plans/free" class="uri">https://posit.cloud/plans/free</a></li>
-<li>Sign up for a free <a href="https://github.com" class="uri">https://github.com</a> account.</li>
-<li>Log in to Github, and search for this repository <a href="https://github.com/CrumpLab/quartoCourseBlog" class="uri">https://github.com/CrumpLab/quartoCourseBlog</a>.</li>
-</ol>
-<ul>
-<li>Click the green “Use this template” Button</li>
-<li>This will make a copy of the template in your github account, it will show up as one of your repositories</li>
-<li>Give your new repository a name</li>
-</ul>
-<ol start="4" type="1">
-<li>Activate Github pages for your repository (under repository settings), and serve the page from the “docs” folder. You should now be able to view the blog from the url given by github pages.</li>
-<li>Log into Posit Cloud</li>
-<li>Create a New Project, choose “New Project from Git Repository”</li>
-</ol>
-<ul>
-<li>enter the URL to the github repository you just made</li>
-</ul>
-<ol start="7" type="1">
-<li>Load the project, and edit/modify the files (see above for examples of creating new posts etc.)</li>
-<li>To send your changed files back to github.com you need to do a few steps</li>
-</ol>
-<ul>
-<li>From the Git tab: stage your changes, commit your changes, and push your changes using the green up arrow.</li>
-<li>You will also need to authenticate your git credentials, and allow Rstudio cloud to update your github repository</li>
-<li>In the terminal run these two lines, but replace with your name and email</li>
-</ul>
-<!-- -->
-<pre><code>git config --global user.name "Your Name"
-git config --global user.email "you@example.com"</code></pre>
-<ul>
-<li>When you “push” your changes back to Github using the green up arrow, you will be asked to enter a username and password. You can enter the username for your Github.com account, <strong>but your password won’t work</strong>. You need to set up a personal access token.</li>
-<li>Go to your github.com profile &gt; settings page. Scroll down, click on “&lt;&gt; Developer Settings”, on the left</li>
-<li>Click on personal access tokens, generate a new token, give it repo access. Save the text somewhere and use it as your github password when pushing from RStudio.</li>
-</ul>
-<ol start="9" type="1">
-<li>At this point you should be able to work on your blog in Rstudio Cloud, and push your changes to have them updated on github.com, which serves your blog online.</li>
-</ol>
-</section>
-<section id="more-quarto" class="level2">
-<h2 class="anchored" data-anchor-id="more-quarto">More quarto</h2>
-<p>See this growing list of quarto resources for much, much more:</p>
-<p><a href="https://github.com/mcanouil/awesome-quarto" class="uri">https://github.com/mcanouil/awesome-quarto</a></p>
+
+<p>Hello! Welcome to my first project (kinda). This blog will demonstrate some skills that I have learned after taking a week long course for R.</p>
+<p>Down below I have coded some graphs involving data about vehicles and their mileage depending on whether its being driven in city conditions or highway conditions.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>mpg</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 234 × 11
+   manufacturer model      displ  year   cyl trans drv     cty   hwy fl    class
+   &lt;chr&gt;        &lt;chr&gt;      &lt;dbl&gt; &lt;int&gt; &lt;int&gt; &lt;chr&gt; &lt;chr&gt; &lt;int&gt; &lt;int&gt; &lt;chr&gt; &lt;chr&gt;
+ 1 audi         a4           1.8  1999     4 auto… f        18    29 p     comp…
+ 2 audi         a4           1.8  1999     4 manu… f        21    29 p     comp…
+ 3 audi         a4           2    2008     4 manu… f        20    31 p     comp…
+ 4 audi         a4           2    2008     4 auto… f        21    30 p     comp…
+ 5 audi         a4           2.8  1999     6 auto… f        16    26 p     comp…
+ 6 audi         a4           2.8  1999     6 manu… f        18    26 p     comp…
+ 7 audi         a4           3.1  2008     6 auto… f        18    27 p     comp…
+ 8 audi         a4 quattro   1.8  1999     4 manu… 4        18    26 p     comp…
+ 9 audi         a4 quattro   1.8  1999     4 auto… 4        16    25 p     comp…
+10 audi         a4 quattro   2    2008     4 manu… 4        20    28 p     comp…
+# ℹ 224 more rows</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">data =</span> mpg,</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">mapping =</span> <span class="fu">aes</span>(</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> cty,</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> hwy,</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">color =</span> year,</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>  ) </span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>) <span class="sc">+</span> <span class="fu">geom_point</span>(<span class="at">position =</span> <span class="st">"jitter"</span>, <span class="at">alpha =</span> <span class="fl">0.6</span>) </span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="index_files/figure-html/unnamed-chunk-1-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>I have also included a data table which mirrors the information displayed on the graph.</p>
+<p>This graph involves minimal coding, only really focusing on how the mileage performs based on the year of the vehicle.</p>
+<p>There are several ways that this graph can be improved.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">data =</span> mpg,</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">mapping =</span> <span class="fu">aes</span>(</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> cty,</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> hwy,</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">color =</span> year,</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>  ) </span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>) <span class="sc">+</span> <span class="fu">geom_point</span>(<span class="at">position =</span> <span class="st">"jitter"</span>, <span class="at">alpha =</span> <span class="fl">0.4</span>)  <span class="sc">+</span></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"MPG while in the city vs highway"</span>,</span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">"city fuel economy (mpg)"</span>,</span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">"Highway fuel economy (mpg)"</span>,</span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">+</span>  <span class="fu">scale_y_continuous</span>(<span class="at">breaks =</span> <span class="fu">seq</span>(<span class="dv">0</span>, <span class="dv">40</span>, <span class="at">by =</span> <span class="dv">5</span>)) <span class="sc">+</span></span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>    <span class="fu">scale_x_continuous</span>(<span class="at">breaks =</span> <span class="fu">seq</span>(<span class="dv">0</span>, <span class="dv">40</span>, <span class="at">by =</span> <span class="dv">5</span>)) </span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="index_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Some ways that this graph was improved were the additions of labels on the x-axis and the y-axis. A title was also added, and more increments were added to understand the graph more clearly.</p>
+<p>For the last graph, I will be implementing most of the skills I have learned in this course for graphing.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">data =</span> mpg,</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">mapping =</span> <span class="fu">aes</span>(</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> cty,</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> hwy,</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">color =</span> year,</span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>  ) </span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>) <span class="sc">+</span> <span class="fu">geom_point</span>(<span class="at">position =</span> <span class="st">"jitter"</span>, <span class="at">alpha =</span> <span class="fl">0.4</span>)  <span class="sc">+</span></span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"MPG while in the City vs Highway"</span>,</span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>    <span class="at">subtitle =</span> <span class="st">"Additional comparison of years of vehicles"</span>,</span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">"City Fuel Economy (mpg)"</span>,</span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">"Highway fuel Economy (mpg)"</span>,</span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span>  <span class="fu">scale_y_continuous</span>(<span class="at">breaks =</span> <span class="fu">seq</span>(<span class="dv">0</span>, <span class="dv">40</span>, <span class="at">by =</span> <span class="dv">5</span>)) <span class="sc">+</span></span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_continuous</span>(<span class="at">breaks =</span> <span class="fu">seq</span>(<span class="dv">0</span>, <span class="dv">40</span>, <span class="at">by =</span> <span class="dv">5</span>)) <span class="sc">+</span></span>
+<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_wrap</span>(<span class="sc">~</span>cyl)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="index_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
 
 
-</section>
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
