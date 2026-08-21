@@ -74,6 +74,7 @@ ggplot(
     x = "Day of the Year",
     y = "Average Temperature",
     title = "Average Temperature Per Day For Every Year",
+    subtitle = "Shallow Water",
     caption = "data from ..."
    ) + scale_colour_continuous(low = "#FFBEB2", high = "#AE123A") +
   theme_classic()
@@ -89,12 +90,13 @@ ggplot(data = daily_shallow_temps,
          y = min_temp,
          group = year,
          color = year)
-       ) +geom_point() +
+       ) +geom_point(alpha = 0.25) +
       geom_smooth(se = FALSE)+
     labs(
        x = "Day of the Year",
        y = "Average Minimum Temperature",
        title = "Average Minimum Temperature Per Day For Every Year",
+       subtitle = "Shallow Water",
       caption = "data from ..."
     )  + scale_colour_continuous(low = "#FFBEB2", high = "#AE123A") +
   theme_classic()
@@ -111,12 +113,13 @@ ggplot(data = daily_shallow_temps,
          y = max_temp,
          group = year,
          color = year)
-) +geom_point() +
+) +geom_point(alpha = 0.25) +
   geom_smooth(se = FALSE)+
   labs(
     x = "Day of the Year",
     y = "Average Maximum Temperature",
     title = "Average Maximum Temperature Per Day For Every Year",
+    subtitle = "Shallow Water",
     caption = "data from ..."
   )  + scale_colour_continuous(low = "#FFBEB2", high = "#AE123A") +
   theme_classic()
@@ -141,6 +144,7 @@ ggplot(
     x = "Day of the Year",
     y = "Average Temperature",
     title = "Average Temperature Per Day For Every Year",
+    subtitle = "Deep Water",
     caption = "data from ..."
   ) + scale_colour_continuous(low = "#FFBEB2", high = "#AE123A") +
   theme_classic()
@@ -155,12 +159,13 @@ ggplot(data = daily_deep_temps,
          y = min_temp_deep,
          group = year,
          color = year)
-) +geom_point() +
+) +geom_point(alpha = 0.25) +
   geom_smooth(se = FALSE)+
   labs(
     x = "Day of the Year",
     y = "Average Minimum Temperature",
     title = "Average Minimum Temperature Per Day For Every Year",
+    subtitle = "Deep Water",
     caption = "data from ..."
   )  + scale_colour_continuous(low = "#FFBEB2", high = "#AE123A") +
   theme_classic()
@@ -176,12 +181,13 @@ ggplot(data = daily_deep_temps,
          y = max_temp_deep,
          group = year,
          color = year)
-) +geom_point() +
+) +geom_point(alpha = 0.25) +
   geom_smooth(se = FALSE)+
   labs(
     x = "Day of the Year",
     y = "Average Maximum Temperature",
     title = "Average Maximum Temperature Per Day For Every Year",
+    subtitle = "Deep Water",
     caption = "data from ..."
   )  + scale_colour_continuous(low = "#FFBEB2", high = "#AE123A") +
   theme_classic()
