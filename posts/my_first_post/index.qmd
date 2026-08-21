@@ -28,25 +28,20 @@ daily_shallow_temps <- shallow_temps |>
   group_by(Date) |>
   summarise(
     mean_temp = mean(Temperature_C, na.rm = TRUE),
-    # Max and min can happen here
-    min_temp = min(mean_temp),
-    max_temp = max(mean_temp)
+    min_temp = min(Temperature_C),
+    max_temp = max(Temperature_C)
   ) 
 
-
 shallow_temps  <- NULL
-
 
 daily_deep_temps <- deep_temps |>
   group_by(Date) |>
   summarise(
     mean_temp = mean(Temperature_C, na.rm = TRUE),
-    # min and max will go here eventually
-    min_temp_deep = min(deep_temps$mean_temp),
-    max_temp_deep = max(deep_temps$mean_temp)
+    min_temp_deep = min(Temperature_C),
+    max_temp_deep = max(Temperature_C)
   )
 deep_temps <- NULL
-
 
 daily_deep_temps<- daily_deep_temps |>
   mutate(
@@ -178,16 +173,17 @@ ggplot(data = daily_deep_temps,
 ggplot(data = daily_deep_temps,
        mapping = aes(
          x = day_of_year,
-         y = max_temp_deep)
-) + geom_smooth()+
+         y = max_temp_deep,
+         group = year,
+         color = year)
+) +geom_point() +
+  geom_smooth(se = FALSE)+
   labs(
     x = "Day of the Year",
-    y = "Average Temperature",
-    title = "Average Temperature Per Day For Every Year",
+    y = "Average Maximum Temperature",
+    title = "Average Maximum Temperature Per Day For Every Year",
     caption = "data from ..."
-  )
+  )  + scale_colour_continuous(low = "#FFBEB2", high = "#AE123A") +
+  theme_classic()
+
 ```
-
-- Improve the color scale - and maybe make a bit of transparency for the smoothed line a well
-
-- Also calculate min and max temps and make their own plots
